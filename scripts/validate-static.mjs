@@ -11,6 +11,8 @@ const requiredFiles = [
   "index.html",
   "main.js",
   "styles.css",
+  "enhancements.js",
+  "enhancements.css",
   "favicon.svg",
   "images/entrecot.webp",
   "images/plato-cazuela.webp",

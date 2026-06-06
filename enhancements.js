@@ -49,41 +49,128 @@ const galleryLabels = [
   },
 ];
 
-const writtenMenu = [
+const fullMenu = [
+  {
+    category: "Aperitivos y conservas",
+    dishes: [
+      ["Boquerones en vinagre", "Conserva clasica para abrir boca."],
+      ["Anchoas del Cantabrico", "Anchoas de sabor intenso y salino."],
+      ["Anchoas de Santona especiales", "Seleccion especial de anchoas."],
+      ["Matrimonio", "Boqueron y anchoa en una combinacion tradicional."],
+    ],
+  },
   {
     category: "Para compartir",
     dishes: [
       ["Croquetas caseras", "Cremosas por dentro, crujientes por fuera y pensadas para empezar la mesa."],
-      ["Huevos rotos", "Patatas, huevo y embutido en una racion de sabor castizo."],
-      ["Jamon", "Corte tradicional para acompanar con pan y bebida."],
-      ["Tortilla espanola", "Pincho clasico de barra, jugoso y reconocible."],
+      ["Surtido de ibericos", "Seleccion de embutidos para compartir."],
+      ["Cecina", "Corte curado de sabor profundo."],
+      ["Pate de perdiz", "Entrante clasico para acompanar con pan."],
+      ["Jamon iberico", "Jamon de corte tradicional."],
+      ["Lomo de bellota", "Embutido iberico de sabor suave e intenso."],
+      ["Chorizo de Guijuelo", "Chorizo iberico para tabla o racion."],
+      ["Salchichon iberico", "Embutido clasico de mesa."],
+      ["Queso de oveja 100%", "Queso curado de oveja."],
+      ["Morcilla de Burgos", "Morcilla tradicional, ideal para compartir."],
+      ["Chistorra de Navarra con pimientos", "Chistorra con pimientos como racion caliente."],
+      ["Lacon a la gallega", "Lacon con presentacion clasica."],
+      ["Lacon de la casa", "Racion de lacon al estilo de Casa Florencio."],
+      ["Alitas de pollo", "Racion de pollo para compartir."],
+    ],
+  },
+  {
+    category: "Huevos rotos",
+    dishes: [
+      ["Huevos rotos con jamon iberico", "Patatas fritas, jamon iberico y pimientos de Padron."],
+      ["Huevos rotos camperos", "Patatas fritas con morcilla, chistorra y pimientos."],
+    ],
+  },
+  {
+    category: "De la huerta",
+    dishes: [
+      ["Ensalada de pimientos y ventresca", "Pimientos asados en casa con ventresca."],
+      ["Ensalada de tomate con ventresca", "Tomate, cebolleta, ventresca, aceite de oliva y sal."],
+      ["Ensalada mixta", "La ensalada de toda la vida."],
+      ["Ensalada Casa Florencio", "Tomate pelado, aceitunas, esparragos, bonito y pimientos."],
+      ["Alcachofas a la plancha", "Alcachofas con huevos de codorniz."],
+      ["Esparragos blancos", "Racion fria y sencilla de huerta."],
+      ["Ensalada templada de queso", "Ensalada con queso como protagonista."],
+      ["Tomate alinado", "Tomate preparado con aceite y sal."],
     ],
   },
   {
     category: "De la casa",
     dishes: [
-      ["Cazuela de la casa", "Plato caliente de cocina tradicional, servido en barro."],
-      ["Racion para compartir", "Propuesta generosa para una comida informal y cercana."],
-      ["Tomate con ventresca", "Ensalada fresca con tomate, ventresca, cebolla y aceitunas."],
+      ["Callos a la madrilena", "Disponibles en racion pequena o grande."],
+      ["Conejo al ajillo", "Guiso tradicional con ajo."],
+      ["Medio conejo al ajillo", "Media racion del clasico conejo al ajillo."],
+      ["Conejo con pimientos verdes y tomate", "Conejo guisado con verdura y tomate."],
+      ["Medio conejo con pimientos verdes y tomate", "Media racion de conejo con pimientos y tomate."],
+      ["Parrillada de carne", "Parrillada con pimientos y patatas para dos personas."],
+      ["Rabo de toro", "Guiso tradicional de carne."],
+      ["Fritura con ensalada", "Fritura acompanada de ensalada."],
     ],
   },
   {
-    category: "Mar salada",
+    category: "Nuestras carnes",
+    dishes: [
+      ["Chuletillas de cordero", "Carne de cordero preparada a la parrilla."],
+      ["Solomillo a la parrilla", "Solomillo marcado a la parrilla."],
+      ["Entrecot de ternera", "Carne a la plancha con guarnicion."],
+      ["Chuleton", "Corte contundente para los amantes de la carne."],
+      ["Presa iberica", "Corte iberico sabroso y jugoso."],
+      ["Otras carnes variadas", "Consultar disponibilidad en el local."],
+    ],
+  },
+  {
+    category: "De la mar salada",
     dishes: [
       ["Calamares", "Fritura dorada con limon, ideal para compartir."],
-      ["Sardinas", "Pescado sencillo de sabor intenso y presentacion clasica."],
-      ["Mejillones", "Racion marinera con guarnicion fresca."],
-      ["Percebes", "Marisco para ocasiones especiales, segun disponibilidad."],
+      ["Pulpo clasico a la gallega", "Pulpo preparado al estilo gallego."],
+      ["Chopitos a la andaluza", "Fritura pequena, crujiente y marinera."],
+      ["Gambas a la plancha", "Gambas de Huelva preparadas a la plancha."],
+      ["Boquerones fritos", "Pescado frito de sabor clasico."],
+      ["Bienmesabe gaditano", "Adobo marinero al estilo gaditano."],
+      ["Sepia a la plancha", "Sepia marcada a la plancha."],
+      ["Calamar de potera a la plancha", "Calamar preparado a la plancha."],
+      ["Rape al horno", "Rape con patatas panaderas, segun disponibilidad."],
+      ["Fritura con ensalada", "Fritura marinera acompanada de ensalada."],
     ],
   },
   {
-    category: "Carnes y parrilla",
+    category: "Obrador y postres",
     dishes: [
-      ["Entrecot a la plancha", "Carne marcada al punto con patatas y pimientos."],
-      ["Pulpo con pimientos", "Pulpo troceado con pimientos asados y aceite de oliva."],
-      ["Platos del dia", "Sugerencias de cocina tradicional segun temporada y disponibilidad."],
+      ["Postres de la casa", "Postres caseros disponibles en el local."],
+      ["Frutas del tiempo", "Fruta de temporada."],
     ],
   },
+  {
+    category: "Platos de encargo",
+    dishes: [
+      ["Arroces", "Preparaciones por encargo."],
+      ["Cabrito asado", "Plato especial bajo reserva."],
+      ["Paletillas", "Asado por encargo."],
+      ["Menu cocido madrileno", "Consultar condiciones y disponibilidad."],
+      ["Platos fuera de carta", "Consultar platos del dia y sugerencias del local."],
+    ],
+  },
+  {
+    category: "Bebidas y bodega",
+    dishes: [
+      ["Cerveza, refrescos y copas", "Bebidas de barra para acompanar la comida."],
+      ["Cafe, combinados y licores", "Servicio de sobremesa."],
+      ["Vinos de la bodega", "Seleccion de vinos tintos, blancos, rosados y crianzas."],
+    ],
+  },
+];
+
+const menuPhotoItems = [
+  ["carta-carnes.webp", "Carta completa de Casa Florencio"],
+  ["carta-casa.webp", "Carta de platos de la casa"],
+  ["carta-bodega.webp", "Carta de huerta, bebidas y bodega"],
+  ["carta-vinos.webp", "Carta de vinos"],
+  ["carta-pinchos.webp", "Menu para eventos y pinchos"],
+  ["carta-mano.webp", "Carta impresa de Casa Florencio"],
 ];
 
 const addGalleryLabels = () => {
@@ -101,17 +188,19 @@ const addGalleryLabels = () => {
   });
 };
 
-const addWrittenMenu = () => {
-  const menuPhotos = document.querySelector(".menu-photos");
-  if (!menuPhotos || document.querySelector(".written-menu")) return;
+const rebuildMenuSection = () => {
+  const menuGrid = document.querySelector(".menu-grid");
+  const menuPhotosElement = document.querySelector(".menu-photos");
+  const menuNote = document.querySelector(".menu-note p");
+  if (!menuGrid || !menuPhotosElement || document.querySelector(".full-menu")) return;
 
   const menu = document.createElement("div");
-  menu.className = "written-menu section-shell";
-  menu.setAttribute("aria-label", "Carta escrita");
-  menu.innerHTML = writtenMenu
+  menu.className = "full-menu section-shell";
+  menu.setAttribute("aria-label", "Menu completo");
+  menu.innerHTML = fullMenu
     .map(
       (group) => `
-        <article class="written-menu-group">
+        <article class="full-menu-group">
           <h3>${group.category}</h3>
           <ul>
             ${group.dishes
@@ -130,8 +219,17 @@ const addWrittenMenu = () => {
     )
     .join("");
 
-  menuPhotos.insertAdjacentElement("afterend", menu);
+  const photoMarkup = menuPhotoItems
+    .map(([src, alt]) => `<img src="./images/${src}" alt="${alt}" loading="lazy" />`)
+    .join("");
+
+  menuGrid.replaceWith(menu);
+  menuPhotosElement.innerHTML = photoMarkup;
+
+  if (menuNote) {
+    menuNote.textContent = "Los precios y la disponibilidad deben confirmarse en el local.";
+  }
 };
 
 addGalleryLabels();
-addWrittenMenu();
+rebuildMenuSection();
