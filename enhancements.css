@@ -53,11 +53,24 @@
 
 .menu-photos {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: clamp(18px, 3vw, 32px);
+  margin-top: 34px;
 }
 
 .menu-photos img {
+  width: min(100%, 520px);
+  height: auto;
+  max-height: none;
+  justify-self: center;
+  padding: clamp(10px, 1.6vw, 16px);
+  border: 1px solid rgba(47, 29, 22, 0.16);
+  border-radius: 8px;
+  object-fit: contain;
   opacity: 1;
   transform: none;
+  background: #fff7ee;
+  box-shadow: 0 22px 54px rgba(47, 29, 22, 0.16);
 }
 
 .photo-grid figure {
@@ -103,12 +116,24 @@
   .menu-photos {
     grid-template-columns: 1fr;
   }
+
+  .menu-photos img {
+    width: min(100%, 560px);
+  }
 }
 
 @media (max-width: 560px) {
   .full-menu,
   .menu-photos {
     grid-template-columns: 1fr;
+  }
+
+  .menu-photos {
+    gap: 18px;
+  }
+
+  .menu-photos img {
+    padding: 8px;
   }
 
   .photo-grid figure,
