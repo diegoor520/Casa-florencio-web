@@ -27,10 +27,14 @@
 
 .full-menu-group li {
   display: grid;
-  gap: 6px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 14px;
+  align-items: start;
 }
 
 .full-menu-group strong {
+  display: block;
+  margin-bottom: 6px;
   font-size: 1rem;
   color: var(--ink);
 }
@@ -40,8 +44,15 @@
   line-height: 1.55;
 }
 
+.full-menu-group em {
+  font-style: normal;
+  font-weight: 900;
+  color: var(--accent-dark);
+  white-space: nowrap;
+}
+
 .menu-photos {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .menu-photos img {
@@ -108,5 +119,10 @@
   .dish-label {
     inset: auto 10px 10px;
     padding: 12px 13px;
+  }
+
+  .full-menu-group li {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 }

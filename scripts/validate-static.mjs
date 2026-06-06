@@ -5,7 +5,8 @@ const root = new URL("..", import.meta.url).pathname;
 const index = readFileSync(join(root, "index.html"), "utf8");
 const main = readFileSync(join(root, "main.js"), "utf8");
 const styles = readFileSync(join(root, "styles.css"), "utf8");
-const allText = `${index}\n${main}\n${styles}`;
+const enhancements = readFileSync(join(root, "enhancements.js"), "utf8");
+const allText = `${index}\n${main}\n${styles}\n${enhancements}`;
 
 const requiredFiles = [
   "index.html",
@@ -46,7 +47,7 @@ for (const pattern of forbiddenPatterns) {
   }
 }
 
-const imageMatches = [...main.matchAll(/\.\/images\/([^"')]+)/g)]
+const imageMatches = [...`${main}\n${enhancements}`.matchAll(/\.\/images\/([^"')]+)/g)]
   .map((match) => match[1])
   .filter((image) => !image.includes("${"));
 for (const image of imageMatches) {
